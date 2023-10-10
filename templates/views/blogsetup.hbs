@@ -1,0 +1,43 @@
+{{>header}}
+<body>
+    <div class="container d-flex flex-column align-items-center">
+        <h1>BlogSetup</h1>
+        <form action="/blog-setup" method="post">
+            <div class="row">
+                <div class="col-md-8">
+                    <Input type="text" name="title" placeholder="Enter blog title">   
+                </div>
+                <br><br>
+                  <div class="col-md-8">
+                <input type="file" name="image">
+                </div>
+                <br><br>
+                  <div class="col-md-8">
+                    <Input type="text-area" name="description" placeholder="Enter Description">   
+                </div>
+                <br><br>
+                  <div class="col-md-8">
+                    <Input type="text" name="adminname" placeholder="Enter Admin name">   
+                </div>
+                <br><br>
+                  <div class="col-md-8">
+                    <Input type="email" name="email" placeholder="Enter Admin Email">   
+                </div>
+                <br><br>
+                  <div class="col-md-8">
+                    <Input type="password" name="password" placeholder="Enter Password">   
+                </div>
+                <br><br>
+                  <div class="col-md-8 text-center">
+                    <Input type="Submit" value="blog setup" class="btn-primary" > 
+                </div>
+
+            </div>
+        </form>
+    </div>
+    {{!-- {{if(typeof message !== "undefined"){
+      <p>{{message}}</p>
+    }
+    }} --}}
+</body>
+{{>footer}}
